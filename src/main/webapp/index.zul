@@ -1,0 +1,18 @@
+<?link rel="stylesheet" type="text/css" href="/style.css"?>
+<zk>
+	<custom-attributes org.zkoss.zul.image.preload="true"/>
+	<borderlayout hflex="1" vflex="1">
+		<north vflex="min" border="none">
+			<include src="/pages/banner.zul"/>
+		</north>
+		<west width="260px" border="none" collapsible="true" splittable="true" minsize="260">
+			<include src="/pages/sidebar-zscript.zul"/>
+		</west>
+		<center id="mainContent" autoscroll="true">
+			<include src="/pages/main.zul"/>
+		</center>
+		<south border="none">
+			<include src="/pages/footer.zul"/>
+		</south>
+	</borderlayout>
+</zk>
